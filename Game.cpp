@@ -20,7 +20,7 @@ bool Game:: init(const char* title, int xpos, int ypos, int width, int height, b
 		m_pTextrue = SDL_CreateTextureFromSurface(m_pRenderer, pTempSurface);
 
 		SDL_FreeSurface(pTempSurface);
-		//ddd
+		
 		SDL_QueryTexture(m_pTextrue, NULL, NULL, &m_sourceRectangle.w, &m_sourceRectangle.h);
 	}
 	else {
